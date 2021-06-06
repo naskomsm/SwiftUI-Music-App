@@ -10,7 +10,13 @@ import SwiftUI
 
 struct AlbumListView: View {
     var body: some View {
-        Text("Hello, World!!")
+        ScrollView(.horizontal) {
+            HStack(spacing: 10) {
+                ForEach(albumlist, id: \.id) { album in
+                    AlbumCard(album: album)
+                }
+            }.frame(height: 400)
+        }
     }
 }
 
