@@ -14,6 +14,8 @@
 		ED0ECCB3266A7B59002235AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0ECCB2266A7B59002235AE /* Preview Assets.xcassets */; };
 		ED0ECCB6266A7B59002235AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0ECCB4266A7B59002235AE /* LaunchScreen.storyboard */; };
 		ED0ECCC1266A7B59002235AE /* Music_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0ECCC0266A7B59002235AE /* Music_AppTests.swift */; };
+		ED558EEC266CCC0300468898 /* TopAlbumCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED558EEB266CCC0300468898 /* TopAlbumCard.swift */; };
+		ED558EEE266CD08500468898 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED558EED266CD08500468898 /* AlbumDetailView.swift */; };
 		EDB9F875266BE28B00E472C5 /* AlbumCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9F874266BE28B00E472C5 /* AlbumCard.swift */; };
 		EDB9F877266BE2FD00E472C5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9F876266BE2FD00E472C5 /* Album.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		ED0ECCBC266A7B59002235AE /* Music-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0ECCC0266A7B59002235AE /* Music_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_AppTests.swift; sourceTree = "<group>"; };
 		ED0ECCC2266A7B59002235AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED558EEB266CCC0300468898 /* TopAlbumCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumCard.swift; sourceTree = "<group>"; };
+		ED558EED266CD08500468898 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 		EDB9F874266BE28B00E472C5 /* AlbumCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCard.swift; sourceTree = "<group>"; };
 		EDB9F876266BE2FD00E472C5 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,8 @@
 				ED0ECCB1266A7B59002235AE /* Preview Content */,
 				EDB9F874266BE28B00E472C5 /* AlbumCard.swift */,
 				EDB9F876266BE2FD00E472C5 /* Album.swift */,
+				ED558EEB266CCC0300468898 /* TopAlbumCard.swift */,
+				ED558EED266CD08500468898 /* AlbumDetailView.swift */,
 			);
 			path = "Music-App";
 			sourceTree = "<group>";
@@ -215,9 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED0ECCAA266A7B58002235AE /* AppDelegate.swift in Sources */,
+				ED558EEC266CCC0300468898 /* TopAlbumCard.swift in Sources */,
 				EDB9F875266BE28B00E472C5 /* AlbumCard.swift in Sources */,
 				ED0ECCAC266A7B58002235AE /* SceneDelegate.swift in Sources */,
 				ED0ECCAE266A7B58002235AE /* AlbumListView.swift in Sources */,
+				ED558EEE266CD08500468898 /* AlbumDetailView.swift in Sources */,
 				EDB9F877266BE2FD00E472C5 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

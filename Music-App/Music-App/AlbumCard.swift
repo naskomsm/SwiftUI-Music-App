@@ -24,6 +24,10 @@ struct AlbumCard: View {
                 Text(album.artist)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                NavigationLink(destination: AlbumDetailView(album: album)){
+                    Text("Read More").font(.caption)
+                        .foregroundColor(.accentColor)
+                }
             }
             .padding()
             Spacer()
@@ -34,17 +38,17 @@ struct AlbumCard: View {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
         )
-        .shadow(radius: 1)
+            .shadow(radius: 1)
     }
 }
 
 struct AlbumCard_Previews: PreviewProvider {
-     static var previews: some View {
-          Group {
-              AlbumCard(album: albumlist[0])
-                  .previewLayout(.fixed(width: 300, height: 510))
-              AlbumCard(album: albumlist[1])
-                  .previewLayout(.fixed(width: 300, height: 510))
-          }
-      }
+    static var previews: some View {
+        Group {
+            AlbumCard(album: albumlist[0])
+                .previewLayout(.fixed(width: 300, height: 510))
+            AlbumCard(album: albumlist[1])
+                .previewLayout(.fixed(width: 300, height: 510))
+        }
+    }
 }

@@ -10,12 +10,26 @@ import SwiftUI
 
 struct AlbumListView: View {
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack(spacing: 10) {
-                ForEach(albumlist, id: \.id) { album in
-                    AlbumCard(album: album)
-                }
-            }.frame(height: 400)
+        NavigationView {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 10) {
+                            ForEach(albumlist, id: \.id) { album in
+                                AlbumCard(album: album)
+                            }
+                        }.frame(height: 400)
+                    }
+                    Text("Top Albums")
+                        .font(.largeTitle)
+                        .bold()
+                    VStack {
+                        ForEach(albumlist, id: \.id) { album in
+                            TopAlbumCard(album: album)
+                        }
+                    }
+                }.padding()
+            }.navigationBarTitle("My Albums")
         }
     }
 }
